@@ -7,13 +7,14 @@ import java.util.Date;
  */
 public class CnuPost {
     private int postId;
-    // commentId 추가
-    private int commentId;
     private String author;
     private String password;
     private String title;
     private String content;
+    private int viewCount;
     private Date createTime;
+    private String filePath;
+    private String fileName;
     private boolean isDel;
 
     public int getPostId() {
@@ -64,20 +65,8 @@ public class CnuPost {
         this.createTime = createTime;
     }
 
-    public boolean isDel() {
-        return isDel;
-    }
-
-    public void setIsDel(boolean isDel) {
-        this.isDel = isDel;
-    }
-
-	public int getCommentId() {
-		return commentId;
-	}
-
-	public void setCommentId(int commentId) {
-		this.commentId = commentId;
+	public boolean isDel() {
+		return isDel;
 	}
 
 	public void setDel(boolean isDel) {
