@@ -7,6 +7,8 @@ import java.util.Date;
  */
 public class CnuPost {
     private int postId;
+    // commentId 추가
+    private int commentId;
     private String author;
     private String password;
     private String title;
@@ -69,4 +71,17 @@ public class CnuPost {
     public void setIsDel(boolean isDel) {
         this.isDel = isDel;
     }
+
+	public int getCommentId() {
+		return commentId;
+	}
+
+	public void setCommentId(int commentId) {
+		this.commentId = commentId;
+	}
+
+	public void setDel(boolean isDel) {
+		this.isDel = isDel;
+	}
+    
 }
