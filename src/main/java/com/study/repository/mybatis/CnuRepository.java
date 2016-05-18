@@ -20,7 +20,7 @@ public interface CnuRepository {
 	int updateCnuBoard(CnuPost obj);
 	int deleteCnuBoard(int postId, String password);
 	
-	List<CnuPostComment> selectCnuPostCommentList();
+	List<CnuPostComment> selectCnuPostCommentList(int postId);
 	int insertCnuPostComment(CnuPostComment obj);
 	CnuPostComment selectCnuCommet(int commentId);
 }
